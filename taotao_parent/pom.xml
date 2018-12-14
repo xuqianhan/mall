@@ -29,9 +29,15 @@
         <joda-time-version>2.10.1</joda-time-version>
         <lombok-version>1.16.20</lombok-version>
         <slf4j-log4j12-version>1.7.25</slf4j-log4j12-version>
+        <aspectjweaver-version>1.9.1</aspectjweaver-version>
     </properties>
     <dependencyManagement>
         <dependencies>
+            <dependency>
+                <groupId>org.aspectj</groupId>
+                <artifactId>aspectjweaver</artifactId>
+                <version>${aspectjweaver-version}</version>
+            </dependency>
             <!--日志-->
             <dependency>
                 <groupId>org.slf4j</groupId>
@@ -68,6 +74,16 @@
             <dependency>
                 <groupId>org.springframework</groupId>
                 <artifactId>spring-context</artifactId>
+                <version>${spring-version}</version>
+            </dependency>
+            <dependency>
+                <groupId>org.springframework</groupId>
+                <artifactId>spring-core</artifactId>
+                <version>${spring-version}</version>
+            </dependency>
+            <dependency>
+                <groupId>org.springframework</groupId>
+                <artifactId>spring-aop</artifactId>
                 <version>${spring-version}</version>
             </dependency>
             <dependency>
